@@ -12,11 +12,11 @@ body {
 .background {
   position: absolute;
   bottom: 0px;
-  background-image: url('../image/background.png');
+  background-image: url('../img/background.png');
   background-repeat: repeat-x;
   animation: slideright 600s infinite linear;
   width: 100%;
-  height: 200px;
+  height: 280px;
   overflow: hidden;
 }
 
@@ -24,7 +24,7 @@ body {
   position: absolute;
   bottom: 0.5rem;
   left: 5rem;
-  background-image: url('../image/dino.png');
+  background-image: url('../img/dino.png');
   width: 60px;
   height: 60px;
 }
@@ -34,13 +34,38 @@ body {
   width: 60px;
   height: 60px;
   bottom: 0;
-  background-image: url('../image/cactus.png');
+  background-image: url('../img/cactus.png');
+}
+
+.score-text {
+  position: fixed;
+  right: 0;
+  padding: 1rem;
+  font-size: 1.2rem;
 }
 
 .game-over {
   text-align: center;
   color: #666666;
   margin-top: 5rem;
+}
+
+.game-over h2 {
+  padding: 0.5rem;
+  font-weight: 200;
+}
+
+.game-over button {
+  padding: 0.6rem;
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  background: none;
+}
+
+.game-over button:hover {
+  background-color: #c5c1c143;
+  cursor: pointer;
+}
 
 @keyframes slideright {
   from {
